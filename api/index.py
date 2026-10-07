@@ -21,7 +21,7 @@ def generate_angka_rahasia(input_str: str) -> str:
     for digit in shifted_str:
         num = int(digit)
         is_tambah = random.choice([True, False])
-        operator_value = random.randint(0, 5)
+        operator_value = random.randint(0, 4)
         
         if is_tambah:
             angka_baru = (num + operator_value) % 10
